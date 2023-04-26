@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body{
+                height: 100vh;
+                width: 100vw;
+                background-image: linear-gradient(130deg, green 33.33%, white 33.33%, white 66.66%, green 33.33%);
+                text-align: center;
+                background-repeat: no-repeat;
+            }
+            
+            .pics{
+                width: 100vw;
+		        
+		        position: relative;
+		        overflow: hidden;
+            }
+            .pos{
+                position: absolute;
+		        top: 0;
+		        left: 0;
+		        width: 100vw;
+		        height: 100vh;
+            }
+            .card{
+        border-radius: 40px;
+        padding: 1px;
+        width: 300px;
+        margin:auto;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: #74B72E;
+    }
+    #head{
+        font-size:50px;
+        background-color: green;
+        color: white;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+
+    }
+    h1{
+        background-color: green;
+        color: white;
+    }
+   
+    .card:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        background-color: #2E8B57;
+    }
+ .text{
+    background-color: green;
+    font-size: 16px;
+ }
+ .text2{
+    background-image: url("data:image/png;base64,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");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+}
+        </style>
+    </head>
+    <body>
+        <table>
+            <div class="card">
+                <div id="head"><b>266940J</b></div>
+                <div id="pic">
+                    <img src="https://attachments.office.net/owa/tayo5384%40navigator.sa.edu.au/service.svc/s/GetAttachmentThumbnail?id=AAMkADg1YjM3MjRhLThlNTktNGVmMS1iMWY1LTEyZDg4NWM3NmQxMABGAAAAAAAJ%2B6lIQfeMTJ9gcEiP4AlABwAfIZ3LJd7zRZZCVFj8T3p%2BAAAAAAEMAADXhWkiG4ReSYhXAV%2B%2BE0g9AAGrZ4upAAABEgAQABz9E41nWbFOmmcWS3tKMQw%3D&thumbnailType=2&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkQ4OThGN0RDMjk2ODQ1MDk1RUUwREZGQ0MzODBBOTM5NjUwNDNFNjQiLCJ0eXAiOiJKV1QiLCJ4NXQiOiIySmozM0Nsb1JRbGU0Tl84dzRDcE9XVUVQbVEifQ.eyJvcmlnaW4iOiJodHRwczovL291dGxvb2sub2ZmaWNlLmNvbSIsInVjIjoiYTExZGVkZDhiM2FmNDQxZWFmYzE3ZTg0ZWQ1ZjgyYjIiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwidmVyIjoiRXhjaGFuZ2UuQ2FsbGJhY2suVjEiLCJhcHBjdHhzZW5kZXIiOiJPd2FEb3dubG9hZEA4OWYzYmNhZC1kZGVlLTQ5ODAtYTZhZC01YTc0MDI2NTdlNGUiLCJpc3NyaW5nIjoiV1ciLCJhcHBjdHgiOiJ7XCJtc2V4Y2hwcm90XCI6XCJvd2FcIixcInB1aWRcIjpcIjExNTM4MDExMTY0NDk2MTAzOTFcIixcInNjb3BlXCI6XCJPd2FEb3dubG9hZFwiLFwib2lkXCI6XCJkNDBiYTY0OS04YWI5LTQ0ZTMtYWE3Zi04NmY2NjdiODRhODhcIixcInByaW1hcnlzaWRcIjpcIlMtMS01LTIxLTMxNTEzNjQ0MTMtMjEyNTczNjIzMy05MDYwOTgzMDItMjg5MTE4MjRcIn0iLCJuYmYiOjE2ODE3MjcwOTksImV4cCI6MTY4MTcyNzY5OSwiaXNzIjoiMDAwMDAwMDItMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwQDg5ZjNiY2FkLWRkZWUtNDk4MC1hNmFkLTVhNzQwMjY1N2U0ZSIsImF1ZCI6IjAwMDAwMDAyLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMC9hdHRhY2htZW50cy5vZmZpY2UubmV0QDg5ZjNiY2FkLWRkZWUtNDk4MC1hNmFkLTVhNzQwMjY1N2U0ZSIsImhhcHAiOiJvd2EifQ.V2iy-ZL4NisSwYIsED9BR8OuxgxaWPczK4UaA-cJ7o6xPDB4VKbvZSxog4E-BKbuozdLgC1eVDWDtQrIic8alpviV5_s0L8yQ_sLh_akC7f0YkBDRcn5VuIsAFZKbt8vLSn7YBoHFpkVCFpbuMYkoH1O5Ch0qtPTfZLYgpcIBEBWGPbwZJ-GaPMKqw_1uweZG1ch97hatZ4lvZZBvhG_MOAY5Ioh1UHonOqOaymBG-x7tN4D86o-o10ZR0C9dq6Al7HB29QWgN8a7Jj3vqeU8-AjwuiHpLeJEK64EEYG7YYm6eer6OrkUxUthF8ZnUkGyZxOCOLH7Hg0EhWogbuDrw&X-OWA-CANARY=xJTyf6HZNkCYp90stm-9wEDeqjAuP9sY9_K7D2R7MGhaadLNPjbdfqlRngapwM1_JVAwR0Nn2kk.&owa=outlook.office.com&scriptVer=20230331005.09&animation=true" style="height:auto;width:200px; border-radius: 50%;">
+                </div>
+                <h1>About Me</h1>
+                <div id="intro">Sustainable cities and communities</div>
+                <p>I love going outdoors whether it is to a heavily populated 
+                    city with some friends for a trip or just to go camping there has never been a time
+                    when I havent enjoyed myself.
+                </p>
+            </div>
+        </table>
+        <div style="height:400px; background-color: white;"></div>
+        <div class="text">
+            <div class="pics">
+                <div class="pos 1"></div>
+                <div class="pos 2"></div>
+                <div class="pos 3"></div>
+            </div>
+           <div class="act" style="background-color: white; width: 50%; text-align: center; 
+           padding: 20px; border:5px solid; margin: auto;"> <h1>Some of the activities I enjoy doing outside include:</h1>
+            <p style="width: 100px;height:100px; background-color: #90ee90;border-radius: 50%; line-height: 90px;margin-left: 200px;"> Running <div class="run"></p>
+           </div>
+                <p style="width:130px; height:130px; background-color:#b1f3b1; border-radius: 50%; line-height: 130px;margin-left: 400px;"> Playing Basketball<br></p>
+            <p style="width: 100px; height:100px; background-color:#d3f8d3; border-radius: 50%; line-height: 90px; margin-left: 60px;"> Sight seeing<br></p>
+           <p style="width:200px; height: 200px; background-color: #defade; border-radius: 50%; line-height :70px; margin-left:65px;">
+             And just wandering around aimlessly<br></p>
+        <div class="text2">
+             <p>This world is an amazing and wonderful place it has everything that we need to survive and so many forms of
+                entertainment. Unfortunaetly we havent taken the proper steps to preserve this world which has been causing an
+                increase in waste which in turn has been affecting the environment negatively</p>
+            <p>To get closer to a more sustainable future one of the most highly important things to invest
+                in would be green energy sources such as solar panels or wind turbines.
+            </p>
+            <p>Another important step that needs to be taken is decreasing the amount of waste produced whether 
+                this could be done by decreasing the amount of packaging on different products or changing packaging to be more
+                environmentally friendly it needs to be done.
+            </p>
+            <p>Making full use of the land we already have instead of expanding more would greatly improve our sustainability</p>
+            </div>
+           </div>
+        </div>
+
+    </body>
+</html>
